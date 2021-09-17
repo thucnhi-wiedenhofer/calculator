@@ -14,7 +14,14 @@ export const CalculatorStyles = styled.div`
     max-width: 90%;
     padding: 5%;
   }
-
+  h1 {
+      font-size: 4rem;
+      color: white;
+      text-align: center;
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
+    }
   .over{
     font-family:'Orbitron', serif;
     color: red;
@@ -29,14 +36,6 @@ export const CalculatorStyles = styled.div`
     @media (max-width: 500px) {
       width: 100%;
       max-height: 200px;
-    }
-    h1 {
-      font-size: 4rem;
-      color: white;
-      text-align: center;
-      @media (max-width: 500px) {
-        font-size: 2rem;
-      }
     }
   }
   .number-pad {

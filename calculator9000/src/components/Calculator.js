@@ -7,24 +7,26 @@ import AmazingNumberButton from "./AmazingNumberButton";
 import MagnificientEqualButton from "./MagnificientEqualButton";
 import PowerfullClearButton from "./PowerfullClearButton";
 import OnlyBackButton from "./OnlyBackButton";
-import PoorNegativeButton from "./PoorNegativeButton";
+import WonderfulSave from "./WonderfulSave";
 import ItSOverNineThousand from "./ItSOverNineThousand";
+import SaveCalcul from "./SaveCalcul";
 import { CalculatorStyles } from './styles/Styles';
 
 
 const Calculator = () => (
     <CalculatorStyles>
-      <div className="over">        
+      <TheTitle />
+      <div className="over"> 
+        <SaveCalcul/>       
         <ItSOverNineThousand/>
       </div>
-      <div className="display">
-        <TheTitle />
+      <div className="display">        
         <BeautifulScreen />
       </div>
       <div className="number-pad">
         <PowerfullClearButton />
         <OnlyBackButton />
-        <PoorNegativeButton />
+        <WonderfulSave />
         <GreatOperationButton buttonValue="/" />
         <AmazingNumberButton buttonValue={7} />
         <AmazingNumberButton buttonValue={8} />
