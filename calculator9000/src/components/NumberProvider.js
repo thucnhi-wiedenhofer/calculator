@@ -127,6 +127,7 @@ const NumberProvider = props => {
         operation:operation})
         .then((response)=>{
           setPost(response.data);
+          console.log(post);
           handleClearCalcul();
         });
     }
